@@ -85,7 +85,14 @@ body {
     grid-template-columns: 1fr 1fr;
     align-self: center;
 }
-
+.link{
+    text-decoration: none;
+    color: #948b90;
+    transition: all 0.3s ease-in-out;
+}
+.link:hover{
+    color: #197b88;
+}
 /*profile*/
 .profile {
     display: flex;
@@ -112,7 +119,7 @@ body {
 .profile__img {
     border-radius: 50px 0 50px 0;
     width: 350px;
-    height: 450px;
+    height: 435px;
     object-fit: cover;
 }
 
@@ -139,7 +146,23 @@ body {
 
 /*contacts*/
 .contacts {
-    width: 300px;
+    width: 400px;
+    border-radius: 50px 0 0 0;
+    background-color: #f4ebe3;
+}
+.contacts__list{
+    flex-direction: column;
+    text-decoration: none;
+    color: #948b90;
+}
+.list_item{
+    list-style-type: none;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+.list_item:hover{
+    color: #197b88;
+    list-style-type: disc;
 }
 
 /*skills*/
@@ -153,8 +176,9 @@ body {
 }
 
 .skills__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+
 }
 
 /*education*/
