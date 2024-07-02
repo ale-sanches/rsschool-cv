@@ -21,7 +21,8 @@ html, body {
 body {
     font-family: 'Roboto', sans-serif;
     background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(201, 246, 255, 1) 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgb(250, 245, 238) 100%);
+
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -36,16 +37,17 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    color: #96c6f1;
+    color: #aeabab;
     background-color: #f9fdff;
 }
-.section{
+
+.section {
     padding: 0 60px;
 }
 
 .section-title {
     /*color: #197b88;*/
-    color: #347375
+    color: #81787d
 }
 
 .header {
@@ -82,7 +84,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-self: center;
-    border: 1px solid red;
 }
 
 /*profile*/
@@ -92,13 +93,16 @@ body {
 }
 
 .profile__info {
-    color: #948b90;
+    color: #7296b8;
     margin-top: 120px;
 
 }
 
 .heading {
-    font-size: 40px;
+    font-size: 42px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
 }
 
 .title {
@@ -117,7 +121,7 @@ body {
     color: #948b90;
     width: 640px;
     position: relative;
-    top: -150px;
+    top: -160px;
     margin-left: 95px;
 }
 
@@ -128,7 +132,8 @@ body {
 .about span {
     border-bottom: 3px solid #7DB3B5;;
 }
-.about-me p{
+
+.about-me p {
     font-size: 20px;
 }
 
@@ -141,7 +146,7 @@ body {
 .skills {
     width: 550px;
     border-radius: 50px 0 0 0;
-    background-color: rgba(148, 218, 238, 0.54);
+    background-color: rgba(246, 189, 189, 0.54);
     padding: 30px 60px;
     color: white;
     font-weight: 600;
