@@ -22,8 +22,12 @@ body {
     font-family: 'Roboto', sans-serif;
     background: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(201, 246, 255, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     line-height: 1.6;
+    height: 100vh;
+    font-size: 24px;
 }
 
 .container {
@@ -35,15 +39,21 @@ body {
     color: #96c6f1;
     background-color: #f9fdff;
 }
-.section-title{
-    color: #197b88;
+.section{
+    padding: 0 60px;
 }
+
+.section-title {
+    /*color: #197b88;*/
+    color: #347375
+}
+
 .header {
     text-align: center;
     padding: 20px 0;
 }
 
-.nav__list {
+.list {
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -68,13 +78,23 @@ body {
     border-bottom: 3px solid #b68157;
 }
 
+.cv-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    border: 1px solid red;
+}
+
 /*profile*/
-.profile{
+.profile {
     display: flex;
     justify-content: space-evenly;
 }
+
 .profile__info {
     color: #948b90;
+    margin-top: 120px;
+
 }
 
 .heading {
@@ -84,16 +104,67 @@ body {
 .title {
     font-size: 30px;
 }
-.profile__img{
-    border-radius: 50px 0 50px 0 ;
+
+.profile__img {
+    border-radius: 50px 0 50px 0;
     width: 350px;
     height: 450px;
     object-fit: cover;
 }
+
+/*about*/
+.about-me {
+    color: #948b90;
+    width: 640px;
+    position: relative;
+    top: -150px;
+    margin-left: 95px;
+}
+
+.section-title.about {
+    font-size: 25px;
+}
+
+.about span {
+    border-bottom: 3px solid #7DB3B5;;
+}
+.about-me p{
+    font-size: 20px;
+}
+
 /*contacts*/
-.contacts{
-    border-radius: 50px 0 50px 0 ;
-    background-color: rgba(148, 218, 238, 0.54);
+.contacts {
     width: 300px;
+}
+
+/*skills*/
+.skills {
+    width: 550px;
+    border-radius: 50px 0 0 0;
+    background-color: rgba(148, 218, 238, 0.54);
+    padding: 30px 60px;
+    color: white;
+    font-weight: 600;
+}
+
+.skills__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*education*/
+.education {
+    border-radius: 50px 0 50px 0;
+    background-color: #F5E0D3;
     padding: 30px;
+    color: #7DB3B5;
+
+}
+
+.edu__list {
+    list-style-type: none;
+}
+
+.edu__item {
+    margin-bottom: 20px;
 }
