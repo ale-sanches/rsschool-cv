@@ -4,8 +4,9 @@ html {
 
 html, body {
     box-sizing: border-box;
-    font-family: Arial, serif;
-    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     padding: 0;
 }
@@ -20,8 +21,7 @@ html, body {
 body {
     font-family: 'Roboto', sans-serif;
     background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 229, 201, 1) 100%);
-    color: #333;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(201, 246, 255, 1) 100%);
     margin: 0;
     line-height: 1.6;
 }
@@ -32,10 +32,12 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    color: #fff;
-    background-color: #fbf7ef;
+    color: #96c6f1;
+    background-color: #f9fdff;
 }
-
+.section-title{
+    color: #197b88;
+}
 .header {
     text-align: center;
     padding: 20px 0;
@@ -65,5 +67,33 @@ body {
     color: #b68157;
     border-bottom: 3px solid #b68157;
 }
-/*profile*/
 
+/*profile*/
+.profile{
+    display: flex;
+    justify-content: space-evenly;
+}
+.profile__info {
+    color: #948b90;
+}
+
+.heading {
+    font-size: 40px;
+}
+
+.title {
+    font-size: 30px;
+}
+.profile__img{
+    border-radius: 50px 0 50px 0 ;
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+}
+/*contacts*/
+.contacts{
+    border-radius: 50px 0 50px 0 ;
+    background-color: rgba(148, 218, 238, 0.54);
+    width: 300px;
+    padding: 30px;
+}
