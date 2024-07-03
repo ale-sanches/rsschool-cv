@@ -2,12 +2,127 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--    <meta name="viewport"-->
+    <!--          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link type="Image/x-icon" href="assets/img/favicon.png" rel="icon">
     <title>CV</title>
 </head>
 <body>
+<header class="header" id="header">
+    <nav class="nav">
+        <ul class="nav__list list">
+            <li class="nav__item"><a href="#profile" class="nav__link">Profile</a></li>
+            <li class="nav__item"><a href="#about-me" class="nav__link">About me</a></li>
+            <li class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+            <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+    <div class="container">
+        <section class="section profile" id="profile">
+            <div class="profile__info">
+                <h1 class="heading">Aleksandra Sanchess</h1>
+                <h3 class="title">Intern/Junior Frontend Developer</h3>
+            </div>
+            <img src="assets/img/ava.jpeg" alt="profile photo" class="profile__img">
+        </section>
+        <section class="section about-me" id="about-me">
+            <h2 class="section-title about"><span>About</span> me</h2>
+            <p>I&rsquo;m changing my&nbsp;profession from a&nbsp;teacher of&nbsp;Arts and English to&nbsp;a&nbsp;front-end
+                developer, I&rsquo;m going towards
+                the goal on&nbsp;my&nbsp;own without moms, dads, loans and hyped-up courses.</p>
+            <div class="languages"><h2 class="section-title lang">Languages:</h2>
+                <p>English (B1+), Russian</p></div>
+        </section>
 
+        <div class="cv-info">
+            <section class="section contacts" id="contacts">
+                <h2 class="section-title">Contacts</h2>
+                <ul class="contacts__list">
+                    <li class="list_item"><a href="https://github.com/ale-sanches" class="link">GitHub</a></li>
+                    <li class="list_item"><span>Discord-nickname:</span> Aleksandra(ale-sanches)</li>
+                    <li class="list_item"><a href="mailto:allesanchess@gmail.com" class="link">Email</a></li>
+                </ul>
+            </section>
+
+            <section class="section education" id="education">
+                <h2 class="section-title">Education</h2>
+                <ul class="edu__list">
+                    <li class="edu__item">Master degree in Pedagogy in the field of modern technologies in teaching
+                        English and Arts
+                    </li>
+                    <li class="edu__item"> Courses on Hyperskill, Stepik, Sololearn, W3Schools, LearnJS, etc</li>
+                </ul>
+            </section>
+            <section class="section skills" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul class="skills__list list">
+                    <li class="skills__item">SQL</li>
+                    <li class="skills__item">Git</li>
+                    <li class="skills__item">HTML</li>
+                    <li class="skills__item">CSS</li>
+                    <li class="skills__item">Figma</li>
+                    <li class="skills__item"> Vue3/ Nuxt</li>
+                    <li class="skills__item">TypeScript</li>
+                    <li class="skills__item">JavaScript</li>
+                </ul>
+            </section>
+            <section class="section projects" id="projects">
+                <h2 class="section-title">Projects</h2>
+                <p>All my projects you can see on my <a href="https://github.com/ale-sanches" class="link">GitHub</a>.
+                </p>
+                <p>Here are some previews:</p>
+                <ul class="projects__list list">
+                    <li class="projects__item">Countries Info<a
+                            href="https://github.com/ale-sanches/source-vault/tree/release/country-info/country-info"><img
+                            src="assets/gifs/countries.gif" alt="project preview" width="250"></a></li>
+                    <li class="projects__item">Aim Training Game<a
+                            href="https://github.com/ale-sanches/source-vault/tree/release/aim-training-game/aim-training-game"><img
+                            src="assets/gifs/aim.gif" width="250" alt="project preview"></a></li>
+                    <li class="projects__item">Accordion Component<a
+                            href="https://github.com/ale-sanches/source-vault/tree/release/acordeon/accordeon"><img
+                            src="assets/gifs/accordeon.gif" alt="project preview" width="250"></a></li>
+                    <li class="projects__item">Flashcards<a
+                            href="https://github.com/ale-sanches/hyperskill-frontend/tree/release/flashcard/flashcards"><img
+                            src="assets/gifs/flashcards.gif" alt="project preview"
+                            width="250"></a></li>
+                </ul>
+
+            </section>
+        </div>
+        <section class="section experience" id="experience">
+            <h2 class="section-title">Experience</h2>
+            <p>
+                My journey may not include conventional industry experience, but it has given me a unique perspective
+                and a fresh approach to problem-solving. I am excited to bring innovative ideas and a strong work ethic
+                to your team.
+            </p>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <!--    <div class="container">-->
+    <a href="https://rs.school/courses/javascript-preschool-ru" class="f-link">
+        <img src="assets/img/rs-logo.svg" alt="RS logo" height="70"></a>
+    <p>2024</p>
+    <a href="https://github.com/ale-sanches" class="f-link"><img src="assets/img/gh-logo.png" alt="GH logo" height="75"></a>
+
+    <!--    </div>-->
+</footer>
+<a href="#header" class="to-the-top"><img src="assets/img/arrow.png" alt="to the top" height="45"
+                                          title="to the top"></a>
 </body>
 </html>
