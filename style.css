@@ -277,7 +277,22 @@ body {
 
 /*footer*/
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 1280px;
     margin: 0 auto;
-    padding: 60px;
+    padding: 20px;
+}
+.f-link{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.f-link:hover{
+    transform: scale(1.1);
+}
+.to-the-top{
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
 }
